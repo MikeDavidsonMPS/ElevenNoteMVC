@@ -60,8 +60,8 @@ namespace ElevenNote.Services
             {
                 var entity =
                     ctx
-                    .Notes
-                    .Single(e => e.NoteId == id && e.OwnerId == _userId);
+                     .Notes
+                     .Single(e => e.NoteId == id && e.OwnerId == _userId);
                 return
                     new NoteDetail
                     {

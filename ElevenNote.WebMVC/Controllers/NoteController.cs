@@ -51,6 +51,8 @@ namespace ElevenNote.WebMVC.Controllers
         {
             var svc = CreateNoteService();
             var model = svc.GetNoteById(id);
+
+            return View(model);
         }
 
         private NoteService CreateNoteService()
